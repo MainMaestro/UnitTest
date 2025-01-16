@@ -1,0 +1,9 @@
+services:
+  api:
+    build: ./calculator.api/
+    ports:
+      - 8080:8080
+    develop:
+      watch:
+        - path: ./server/
+          action: rebuild
